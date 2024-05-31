@@ -1,0 +1,28 @@
+<div class="trust-brand">
+    <div class="trust-brand__title">
+        <h2>{{ section.settings.trust_brand_title }}</h2>
+    </div>
+    <div class="trust-brand__content" id="trust-brand-content">
+        <!-- Images will be dynamically inserted here -->
+       <img src={{"../assets/amazonpay.svg" |  asset_url}} alt="amazon" srcset="" class="trustBrandImg">
+       <img src={{"../assets/gpay.svg" |  asset_url}} alt="gpay" srcset=""  class="trustBrandImg">
+       <img src={{"../assets/americanexpress.svg" |  asset_url}} alt="americanexpress" srcset=""  class="trustBrandImg"> 
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Trust Brand",
+    "target": "section",
+    "stylesheet": "trust-brand.css",
+    "javascript": "trust-brand.js",
+    "settings": [
+        {
+            "type": "text",
+            "id": "trust_brand_title",
+            "label": "Title",
+            "default": "Trust Brand"
+        }
+    ]
+}
+{% endschema %}
