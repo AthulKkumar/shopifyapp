@@ -3,7 +3,7 @@
 client_id = "7180d3a7a2f9a3b1cde9c734b64a23ce"
 name = "consumer-app"
 handle = "consumer-app"
-application_url = "https://samples-canal-appointments-accordance.trycloudflare.com"
+application_url = "https://units-der-baths-handed.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_product_listings,read_products,write_products"
 
 [auth]
 redirect_urls = [
-  "https://samples-canal-appointments-accordance.trycloudflare.com/auth/callback",
-  "https://samples-canal-appointments-accordance.trycloudflare.com/auth/shopify/callback",
-  "https://samples-canal-appointments-accordance.trycloudflare.com/api/auth/callback"
+  "https://units-der-baths-handed.trycloudflare.com/auth/callback",
+  "https://units-der-baths-handed.trycloudflare.com/auth/shopify/callback",
+  "https://units-der-baths-handed.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

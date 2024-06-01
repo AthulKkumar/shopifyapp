@@ -41,6 +41,7 @@ export function TrustBrands({ merchantName }) {
       .then((data) => {
         localStorage.setItem("trustedBrands", JSON.stringify(selectedBrands));
         console.log("Success:", data);
+        alert("Brands successfully saved");
         setError(null);
 
         window.dispatchEvent(
@@ -66,7 +67,7 @@ export function TrustBrands({ merchantName }) {
   };
 
   return (
-    <Page>
+    <Page narrowWidth>
       <Layout>
         <Layout.Section oneThird>
           {brands.map((brand) => (

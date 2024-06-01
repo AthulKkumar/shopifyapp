@@ -129,10 +129,10 @@ app.post("/api/merchant-login", async (req, res) => {
           merchantName: merchant.username,
         });
       } else {
-        res.status(400).send({ error: "Invalid credentials" });
+        res.status(401).json({ error: "Invalid credentials" });
       }
     } else {
-      res.status(400).send({ error: "Merchant doesn't exist" });
+      res.status(404).json({ error: "Merchant doesn't exist" });
     }
   } catch (error) {
     res.status(400).send({ error: error.message });

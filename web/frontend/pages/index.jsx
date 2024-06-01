@@ -15,13 +15,9 @@ export default function HomePage() {
     <Page fullWidth>
       {localStorage.getItem("merchantName") ? (
         <>
-          <TitleBar
-            title="Add the Trust Brands to your products"
-            primaryAction={null}
-          />
           <Layout>
             <ProductsCard setMerchantName={setMerchantName} />
-            <Layout.Section>
+            <Layout.Section oneThird>
               <h1>Trust Brands :</h1>
               <TrustBrands merchantName={merchantName} />
             </Layout.Section>

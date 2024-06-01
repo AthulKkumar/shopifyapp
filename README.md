@@ -1,3 +1,56 @@
+# Documentation
+
+## Admin API
+
+In the Shopify app's admin panel, the first step is to create a merchant account. There is an API provided in the backend (`index.js`) to create a merchant (vendor) account. You can use any REST API service like Postman to create this account. The required values are:
+
+- **username**
+- **password**
+
+Make sure to add the username exactly the same as the vendor name inside the store.
+
+### Steps to Create a Merchant Account
+
+1. **Create Merchant Account using API**:
+
+   - Use a REST API service to send a request to create a merchant account.
+   - Ensure the username matches the vendor name inside the store.
+
+   ![Product Data](/screenshots/productdata.png)
+
+2. **Login to Admin Panel**:
+
+   - Once the merchant is created in the database, go to the Shopify admin panel.
+   - You will see a login page. Enter your username and password.
+
+   ![Login page](/screenshots/login.png)
+
+3. **Access the Dashboard**:
+
+   - After logging in, you will be redirected to the dashboard where you can see products and trust brands.
+
+   ![Dashboard](/screenshots/merchantproducts.png)
+
+4. **View Products and Trust Brands**:
+
+   - You can see the product list of the logged-in merchant. Scroll down to find the option to choose trust brands.
+
+   ![Trust Brands](/screenshots/trustbrands.png)
+
+5. **Save Trust Brands**:
+
+   - Choose the trust brands and click on the save button. The data will be saved in the database as an array of trust brands in the merchant schema.
+
+   ![Save button](/screenshots/savebutton.png)
+
+## Frontend
+
+The storefront part was created using an online store theme extension. A section was added to display the trust brands of the merchant under the buy now button.
+
+![Store Front](/screenshots/storefront.png)
+
+![Trust Brands View](/screenshots/turstbrandsview.png)
+
 # Shopify App Template for Node
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using Node and React. It contains the basics for building a Shopify app.

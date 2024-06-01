@@ -44,6 +44,11 @@ export function ProductsCard({ setMerchantName }) {
           {products.map((product) => (
             <Layout.Section key={product.id} oneThird>
               <LegacyCard title={product.title} sectioned>
+                <img
+                  src={product.images[0].src}
+                  alt={product.title}
+                  className="productImages"
+                />
                 <p>{product.description}</p>
               </LegacyCard>
             </Layout.Section>
